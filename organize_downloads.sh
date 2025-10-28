@@ -1,3 +1,4 @@
+# Version 1.1 - Added summary
 #!/bin/bash
 # This script organizes Downloads by file type
    
