@@ -1,3 +1,4 @@
+# Version 1.1 - Added summary
 #!/bin/bash
 # daily_organizing.sh - Organize downloads by file type
 
