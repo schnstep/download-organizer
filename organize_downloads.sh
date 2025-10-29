@@ -2,6 +2,19 @@
 #!/bin/bash
 # daily_organizing.sh - Organize downloads by file type
 
+# Check if Downloads directory exists
+if [ ! -d ~/Downloads]; then
+echo "Error: Downloads directory not found"
+exit 1
+fi
+
+# Check if Documents directory exists
+if [ ! -d ~/Documents]; then
+echo "Error: Documents directory not found"
+exit 1
+fi
+
+
 # Set the documents directory
 DOCUMENTS=~/Documents
 
