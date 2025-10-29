@@ -1,8 +1,9 @@
+# Author: Stephan Schneider
 # Version 1.5 - Added directory checks
-#!/bin/bash
 # daily_organizing.sh - Organize downloads by file type
-# Creates a folder with today's date and moves files from downloads into that folder with subdirectories for PDF, Image, Spreadsheet, Video, and Other files
+# Creates a folder with today's date in Documents  and moves files from downloads into that folder with subdirectories for PDF, Image, Spreadsheet, Video, and Other files
 
+#!/bin/bash
 
 # Check if Downloads directory exists
 if [ ! -d ~/Downloads]; then
@@ -15,7 +16,6 @@ if [ ! -d ~/Documents]; then
 echo "Error: Documents directory not found"
 exit 1
 fi
-
 
 # Set the documents directory
 DOCUMENTS=~/Documents
