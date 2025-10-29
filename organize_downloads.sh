@@ -9,7 +9,7 @@ DOCUMENTS=~/Documents
 TODAY=$(date +%Y-%m-%d)
 
 # Create folder for today's date and subfolders
-mkdir -p "$DOCUMENTS/$TODAY"/{PDFs,Images,Spreadsheets,Other}
+mkdir -p "$DOCUMENTS/$TODAY"/{PDFs,Images,Spreadsheets,Videos,Other}
 
 # Move files by type
 echo "Organizing files from Downloads..."
@@ -24,6 +24,9 @@ fi
 if mv ~/Downloads/*.{xls,xlsx,ods,csv,xml} "$DOCUMENTS/$TODAY/Spreadsheets/" 2>/dev/null; then
 echo "Moved spreadsheet files"
 fi
+if mv ~/Downloads/*.{mp4,mov,avi,mkv} "$DOCUMENTS/$TODAY/Videos/" 2>/dev/null; then
+echo "Moved video files"
+fi
 find ~/Downloads -maxdepth 1 -type f -exec mv {} "$DOCUMENTS/$TODAY/Other/" \; 2>/dev/null
 echo "Moved remaining files"
 
@@ -34,4 +37,5 @@ echo "Summary:"
 echo " PDFs: $(ls -1 "$DOCUMENTS/$TODAY/PDFs/" 2>/dev/null | wc -l | xargs) files"
 echo " Images: $(ls -1 "$DOCUMENTS/$TODAY/Images/" 2>/dev/null | wc -l | xargs) files"
 echo " Spreadsheets: $(ls -1 "$DOCUMENTS/$TODAY/Spreadsheets/" 2>/dev/null | wc -l | xargs) files"
+echo " Videos: $(ls -1 "$DOCUMENTS/$TODAY/Videos/" 2>/dev/null | wc -l | xargs) files"
 echo " Other: $(ls -1 "$DOCUMENTS/$TODAY/Other/" 2>/dev/null | wc -l | xargs) files"
