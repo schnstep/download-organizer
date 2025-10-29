@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 # Author: Stephan Schneider
 # Version 1.5 - Added directory checks
 # daily_organizing.sh - Organize downloads by file type
 # Creates a folder with today's date in Documents  and moves files from downloads into that folder with subdirectories for PDF, Image, Spreadsheet, Video, and Other files
 
 #!/bin/bash
+=======
+# Version 1.1 - Added summary
+#!/bin/bash
+# daily_organizing.sh - Organize downloads by file type
+>>>>>>> parent of 76a82ca (Add script purpose documentation)
 
 # Check if Downloads directory exists
 if [ ! -d ~/Downloads]; then
@@ -54,3 +60,4 @@ echo " Images: $(ls -1 "$DOCUMENTS/$TODAY/Images/" 2>/dev/null | wc -l | xargs) 
 echo " Spreadsheets: $(ls -1 "$DOCUMENTS/$TODAY/Spreadsheets/" 2>/dev/null | wc -l | xargs) files"
 echo " Videos: $(ls -1 "$DOCUMENTS/$TODAY/Videos/" 2>/dev/null | wc -l | xargs) files"
 echo " Other: $(ls -1 "$DOCUMENTS/$TODAY/Other/" 2>/dev/null | wc -l | xargs) files"
+API_KEY=secret123
