@@ -1,6 +1,8 @@
-# Version 1.1 - Added summary
+# Version 1.5 - Added directory checks
 #!/bin/bash
 # daily_organizing.sh - Organize downloads by file type
+# Creates a folder with today's date and moves files from downloads into that folder with subdirectories for PDF, Image, Spreadsheet, Video, and Other files
+
 
 # Check if Downloads directory exists
 if [ ! -d ~/Downloads]; then
