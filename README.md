@@ -1,5 +1,10 @@
 # Download Organizer
 
+![GitHub last commit](https://img.shields.io/github/last-commit/schnstep/download-organizer)
+![GitHub issues](https://img.shields.io/github/issues/schnstep/download-organizer)
+![GitHub stars](https://img.shields.io/github/stars/schnstep/download-organizer)
+![License](https://img.shields.io/github/license/schnstep/download-organizer)
+
 Automated file organization script that sorts downloads into dated folders by file type.
 
 ## 🎯 Purpose
